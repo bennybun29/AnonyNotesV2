@@ -90,11 +90,11 @@ body {
     }
 
     .header .anony {
-        font-size: 10px; /* reduce font size for smaller screens */
+        font-size: 15px; /* reduce font size for smaller screens */
     }
 
     .header .notes {
-        font-size: 10px; /* reduce font size for smaller screens */
+        font-size: 15px; /* reduce font size for smaller screens */
     }
 }
 
@@ -197,6 +197,15 @@ form button:hover {
         height: 80vh;
         width: 90%;
         margin: 50px;
+    }
+}
+
+@media screen and (min-width: 600px){
+    .container {
+        display: flex;
+        border: 3px solid black;
+        height: 80vh;
+        width: 90%;
     }
 }
 
