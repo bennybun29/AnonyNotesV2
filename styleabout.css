@@ -166,14 +166,14 @@ body {
 .header .anony {
    font-family: "Oswald", sans-serif;
    font-weight: 350;
-   font-size: 1rem;
+   font-size: 4rem;
 }
 
 .header .notes {
    font-family: "PT Serif", serif;
    font-weight: 400;
    font-style: normal;
-   font-size: 1rem;
+   font-size: 4rem;
    margin: 0;
 }
 
@@ -192,14 +192,14 @@ body {
    .header .anony {
        font-family: "Oswald", sans-serif;
        font-weight: 350;
-       font-size: 2rem;
+       font-size: 1rem;
    }
    
    .header .notes {
        font-family: "PT Serif", serif;
        font-weight: 400;
        font-style: normal;
-       font-size: 2rem;
+       font-size: 1rem;
        margin: 0;
    }
    
@@ -215,11 +215,11 @@ body {
    }
 
    .header .anony {
-       font-size: 1rem; /* reduce font size for smaller screens */
+       font-size: 0.5rem; /* reduce font size for smaller screens */
    }
 
    .header .notes {
-       font-size: 1rem; /* reduce font size for smaller screens */
+       font-size: 0.5rem; /* reduce font size for smaller screens */
    }
 }
 
