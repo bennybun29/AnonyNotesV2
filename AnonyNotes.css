@@ -1,0 +1,210 @@
+body {
+    margin: 0%;
+ }
+ /*header*/
+ .header {
+    display: block;
+    padding: 0.5vh;
+    color: black;
+    text-align: center;
+    font-size: 3vh;
+    width: 98.7;
+    overflow: hidden;
+ }
+ 
+ .header .anony {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 350;
+ }
+ 
+ .header .notes {
+    font-family: "PT Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+ }
+ 
+ /*middle content*/
+ .container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+ }
+ 
+ .img1 img {
+    margin-left: 11vw;
+    margin-right: auto;
+    max-width: 85%;
+ }
+ 
+ .buttons {
+    margin-top: 20px;
+    text-align: center;
+    margin-left: 1.8vw;
+ }
+ 
+ .buttons button:hover{
+    cursor: pointer;
+ }
+ 
+ .buttons .writeButton{
+    display: block;
+    text-decoration: none;
+    padding: 5px 111px;
+    background-color: black;
+    color: white;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 350;
+    font-size: medium;
+    font-size: 4vh;
+    border-radius: 10px;
+    margin-bottom: 10px; /* Add margin between buttons */
+    transition: 700ms;
+ }
+ 
+ .buttons .writeButton:hover{
+    background-color: grey;
+    border-color: grey;
+    box-shadow: 5px 5px rgb(202, 202, 202);
+ }
+ 
+ .buttons .browseNotes {
+    display: block;
+    text-decoration: none;
+    padding: 5px 100px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 350;
+    font-size: medium;
+    border: 0;
+    font-size: 4vh;
+    border-radius: 10px;
+    margin-bottom: 10px; /* Add margin between buttons */
+    transition: 700ms;
+ }
+ 
+ .buttons .browseNotes:hover {
+    background-color: grey;
+    color: white;
+    box-shadow: 5px 5px rgb(202, 202, 202);
+ }
+ a {
+    text-decoration: none;
+ }
+ 
+
+ .space {
+   padding-bottom: 130px;
+ }
+  /*footer*/
+footer {
+   bottom: 0;
+   left: 0;
+   width: auto;
+   max-height: fit-content;
+   background-color: black;
+   color: white;
+   padding: 10px;
+   margin-left: 20px;
+   margin-right: 20px;
+   border-radius: 20px;
+   display: flex;
+   flex-wrap: wrap;
+   margin-bottom: 5px;
+}
+
+footer p {
+  text-decoration: none;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 100;
+}
+
+.links {
+  text-align: right;
+  margin-left: auto;
+}
+
+.links h4 {
+  text-decoration: none;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 400;
+  margin-bottom: 0;
+  margin-top: 3px;
+  padding-bottom: 0;
+}
+
+ul{
+  margin-top: 3px;
+}
+
+li{
+  text-decoration: none;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 250;
+  list-style: none;
+}
+
+li a:hover{
+   text-decoration: underline;
+ }
+
+li a {
+  color: white;
+}
+
+.logo .anony {
+   font-family: "Oswald", sans-serif;
+   font-optical-sizing: auto;
+   font-style: normal;
+   font-weight: 350;
+   font-size: large;
+}
+
+.logo .notes {
+   font-family: "PT Serif", serif;
+   font-weight: 400;
+   font-style: normal;
+   font-size: large;
+}
+ 
+ @media screen and (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        align-items: center;
+    }
+ 
+    .img1 img {
+        max-width: 50%;
+    }
+ 
+    .buttons {
+        margin-left: 20px;
+    }
+ }
+ 
+ @media screen and (max-width: 768px) {
+    .buttons .writeButton,
+    .buttons .browseNotes{
+        display: block;
+        margin: 10px auto; /* Center the buttons */
+    }
+ }
+ 
+ @media only screen and (max-width: 600px) {
+   footer {
+       justify-content: center;
+       text-align: center;
+   }
+}  

@@ -1,0 +1,269 @@
+body {
+    margin: 0;
+}
+
+/*header*/
+.header {
+    color: black;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 0 20px; 
+    max-width: 100%;
+}
+
+.header a {
+    text-decoration: none;
+    color: black;
+}
+
+.header a:hover{
+    cursor: pointer;
+}
+.header .anony {
+    font-family: "Oswald", sans-serif;
+    font-weight: 350;
+    font-size: 1rem;
+}
+
+.header .notes {
+    font-family: "PT Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    margin: 0;
+}
+
+.header img {
+    width: 100px;
+    height: auto;
+    object-fit: cover;
+}
+
+@media screen and (min-width: 768px){
+    .header {
+        display:flex;
+        flex-wrap: wrap;
+    }
+
+    .header .anony {
+        font-family: "Oswald", sans-serif;
+        font-weight: 350;
+        font-size: 2rem;
+    }
+    
+    .header .notes {
+        font-family: "PT Serif", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 2rem;
+        margin: 0;
+    }
+    
+}
+
+@media only screen and (max-width: 600px) {
+    .header {
+        padding: 0 10px; /* reduce padding for smaller screens */
+    }
+
+    .header img {
+        display: none; /* hide the image on smaller screens */
+    }
+
+    .header .anony {
+        font-size: 1rem; /* reduce font size for smaller screens */
+    }
+
+    .header .notes {
+        font-size: 1rem; /* reduce font size for smaller screens */
+    }
+}
+
+/*Subheader*/
+.subheader{
+    display: flex;
+    align-content:stretch;
+    align-items: center;
+    padding: 0 20px; 
+    max-width: 100%;
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+}
+
+.subheader a {
+    text-decoration: none;
+    color: hsl(0, 2%, 49%);
+    transition: 800ms;
+    border-radius: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+
+.subheader a:hover{
+    cursor: pointer;
+    color: black;   
+}
+
+/*browse image*/
+.browsebanner{
+    text-align: center;
+    margin-top: 2rem;
+    max-width: 100%;
+}
+
+.browsebanner p {
+    font-family: "Oswald", sans-serif;
+    font-weight: 350;
+}
+
+/*search*/
+form {
+    display: flex;
+    justify-content: center; /* center the form horizontally */
+    align-items: center;
+    height: 40px;
+    width: 50%;
+    margin: 0 auto; /* center the form on the page */
+}
+
+form input {
+    flex: 1; /* take up remaining space */
+    margin-right: 10px; /* add some spacing between input and button */
+    border-radius: 10px;
+    border-color: black;
+    height: 30px;
+    padding: 10px;
+}
+
+form input:hover {
+    box-shadow: 3px 3px grey;
+}
+
+form button {
+    border-radius: 5px;
+    padding: 5px 10px 5px 10px;
+}
+
+form button:hover {
+    border-radius: 5px;
+    padding: 5px 10px 5px 10px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+
+/*notes*/
+
+.container {
+    display: flex;
+    border: 3px solid black;
+    height: 80vh;
+    width: 80%;
+    margin: 50px;
+    overflow: scroll;
+}
+
+@media screen and (min-width: 768px){
+    .container {
+        display: flex;
+        border: 3px solid black;
+        height: 80vh;
+        width: 90%;
+        margin: 50px;
+    }
+}
+
+ /*footer*/
+ footer {
+    bottom: 0;
+    left: 0;
+    width: auto;
+    max-height: fit-content;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 5px;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+ }
+ 
+ footer p {
+   text-decoration: none;
+   font-family: "Oswald", sans-serif;
+   font-optical-sizing: auto;
+   font-style: normal;
+   font-weight: 100;
+ }
+ 
+ .links {
+   text-align: right;
+   margin-left: auto;
+ }
+ 
+ .links h4 {
+   text-decoration: none;
+   font-family: "Oswald", sans-serif;
+   font-optical-sizing: auto;
+   font-style: normal;
+   font-weight: 400;
+   margin-bottom: 0;
+   margin-top: 3px;
+   padding-bottom: 0;
+ }
+ 
+ ul{
+   margin-top: 3px;
+ }
+ 
+ li{
+   text-decoration: none;
+   font-family: "Oswald", sans-serif;
+   font-optical-sizing: auto;
+   font-style: normal;
+   font-weight: 250;
+   list-style: none;
+ }
+ 
+ li a:hover{
+    text-decoration: underline;
+  }
+ 
+ li a {
+   color: white;
+   text-decoration: none;
+   justify-content: left;
+ }
+ 
+ .logo .anony {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 350;
+    font-size: large;
+ }
+ 
+ .logo .notes {
+    font-family: "PT Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: large;
+ }
+
+ .logo a {
+    text-decoration: none;
+    color: white;
+ }
+  
+ @media only screen and (max-width: 600px) {
+    footer {
+        justify-content: center;
+        text-align: center;
+    }
+ }  
+  
+ 

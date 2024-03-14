@@ -1,0 +1,253 @@
+
+.team {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+ }
+ 
+.team-content {
+    width: 100%;
+    max-width: 1350px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Changed 'auto' to '1fr' */
+    align-items: center;
+    gap: 0.5rem;
+    text-align: center;
+    margin-bottom: 4rem;
+ }
+ 
+.team-content img { 
+   width: 100%;
+   height: auto;
+   border-radius: 15px;
+   margin-bottom: 15px;
+}
+
+.center h1 {
+   color: black;
+   font-size: 3rem;
+   text-align: center;
+   font-family: "PT Serif", serif;
+   font-weight: 900;
+   font-style:normal;
+
+}
+
+.box {
+   padding: 16px;
+   background: rgb(0, 0, 0);
+   border-radius: 15px;
+   transition: all .38s ease;
+}
+
+.box h3 {
+   font-size: 20px;
+   font-weight: 600;
+   color: rgb(255, 255, 255);
+   margin-bottom: 8px;
+}
+
+.box h5 {
+   font-size: 15px;
+   font-weight: 600;
+   color: rgb(255, 255, 255);
+   margin-bottom: 15px;
+   letter-spacing: 2px;
+}
+
+.icon i{
+   display: inline-block;
+   color: rgb(255, 255, 255);
+   font-size: 20px;
+   margin: 0 8px;
+   transition: all .38s ease;
+}
+
+.icon i:hover {
+   transform: scale(1.2);
+}
+
+@media(max-width: 1240px){
+   .team{
+       width: 100%;
+       height: auto;
+       padding: 90px 2%;  
+   }
+   .center h1 {
+       font-size: 3.2rem;
+   }
+}
+
+body {
+   margin: 0;
+}
+
+.heads {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 350;
+    text-align: center;
+}
+
+/*Subheader*/
+.subheader{
+   display: flex;
+   align-content:stretch;
+   align-items: center;
+   padding: 0 20px; 
+   max-width: 100%;
+   font-family: "Oswald", sans-serif;
+   font-weight: 500;
+}
+
+.subheader a {
+   text-decoration: none;
+   color: hsl(0, 0%, 71%);
+   transition: 800ms;
+   border-radius: 3px;
+   padding-left: 10px;
+   padding-right: 10px;
+   
+}
+
+.subheader a:hover{
+   cursor: pointer;
+   color: rgb(0, 0, 0);   
+}
+
+.aboutbanner{
+    text-align: center;
+    margin-top: 2rem;
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+.aboutimg {
+   text-align: center;
+   margin-top: 5px;
+   margin-bottom: 0;
+}
+.paragraph {
+   text-align: center;
+   margin: 5%;
+   font-family: "Oswald", sans-serif;
+   font-optical-sizing: auto;
+   font-style: normal;
+   font-size: 20px;
+   font-weight: 250;
+}
+/*header*/
+.header {
+   color: black;
+   display: flex;
+   justify-content: space-between; 
+   align-items: center;
+   padding: 0 20px; 
+   max-width: 100%;
+}
+
+.header h1 {
+   color: black;
+}
+
+.header a {
+   text-decoration: none;
+}
+
+.header a:hover{
+   cursor: pointer;
+}
+.header .anony {
+   font-family: "Oswald", sans-serif;
+   font-weight: 350;
+   font-size: 1rem;
+}
+
+.header .notes {
+   font-family: "PT Serif", serif;
+   font-weight: 400;
+   font-style: normal;
+   font-size: 1rem;
+   margin: 0;
+}
+
+.header img {
+   width: 100px;
+   height: auto;
+   object-fit: cover;
+}
+
+@media screen and (min-width: 768px){
+   .header {
+       display:flex;
+       flex-wrap: wrap;
+   }
+
+   .header .anony {
+       font-family: "Oswald", sans-serif;
+       font-weight: 350;
+       font-size: 2rem;
+   }
+   
+   .header .notes {
+       font-family: "PT Serif", serif;
+       font-weight: 400;
+       font-style: normal;
+       font-size: 2rem;
+       margin: 0;
+   }
+   
+}
+
+@media only screen and (max-width: 600px) {
+   .header {
+       padding: 0 10px; /* reduce padding for smaller screens */
+   }
+
+   .header img {
+       display: none; /* hide the image on smaller screens */
+   }
+
+   .header .anony {
+       font-size: 1rem; /* reduce font size for smaller screens */
+   }
+
+   .header .notes {
+       font-size: 1rem; /* reduce font size for smaller screens */
+   }
+}
+
+
+footer {
+   bottom: 0;
+   max-width: 100%;
+   background-color: black;
+   color: white;
+   text-align: center;
+   padding: 10px;
+   font-family: "Oswald", sans-serif;
+   font-weight: 300;
+   font-size: 1rem;
+}
+
+
+@media screen and (min-width: 768px) {
+   .container {
+       flex-direction: row;
+       align-items: center;
+   }
+
+   .img1 img {
+       max-width: 50%;
+   }
+
+   .buttons {
+       margin-left: 20px;
+   }
+}
