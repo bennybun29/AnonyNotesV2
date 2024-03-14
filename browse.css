@@ -72,13 +72,32 @@ body {
     }
 
     .header .anony {
-        font-size: 0.5rem; /* reduce font size for smaller screens */
+        font-size: 10px; /* reduce font size for smaller screens */
     }
 
     .header .notes {
-        font-size: 0.5rem; /* reduce font size for smaller screens */
+        font-size: 10px; /* reduce font size for smaller screens */
     }
 }
+
+@media only screen and (max-width: 650px) {
+    .header {
+        padding: 0 10px; /* reduce padding for smaller screens */
+    }
+
+    .header img {
+        display: none; /* hide the image on smaller screens */
+    }
+
+    .header .anony {
+        font-size: 10px; /* reduce font size for smaller screens */
+    }
+
+    .header .notes {
+        font-size: 10px; /* reduce font size for smaller screens */
+    }
+}
+
 
 /*Subheader*/
 .subheader{
