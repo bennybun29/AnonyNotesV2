@@ -98,7 +98,7 @@ body {
     }
 }
 
-@media only screen and (max-width: 410px) {
+@media only screen and (max-width: 426px) {
     .header {
         padding: 0 10px; /* reduce padding for smaller screens */
     }
@@ -149,7 +149,7 @@ body {
     }
 }
 
-@media only screen and (max-width: 410px) {
+@media only screen and (max-width: 426px) {
     .subheader a {
         padding: 0 10px; /* reduce padding for smaller screens */
         font-size: 12px;
@@ -209,9 +209,19 @@ form button:hover {
     display: flex;
     border: 3px solid black;
     height: 80vh;
-    width: 90%;
-    margin: 30px;
+    width: auto;
+    margin: 60px;
     overflow: scroll;
+}
+
+@media screen and (min-width: 1280px){
+    .container {
+        display: flex;
+        border: 3px solid black;
+        height: 80vh;
+        width: 100%;
+        padding-right: 60px;
+    }
 }
 
 @media screen and (min-width: 768px){
@@ -233,7 +243,7 @@ form button:hover {
     }
 }
 
-@media screen and (min-width: 410px){
+@media screen and (min-width: 414px){
     .container {
         display: flex;
         border: 3px solid black;
