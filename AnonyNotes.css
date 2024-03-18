@@ -1,11 +1,16 @@
 body {
-    margin: 0%;
+   margin: 0%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   
  }
  /*header*/
  .header {
+   background-color: black;
     display: block;
     padding: 0.5vh;
-    color: black;
+    color: white;
     text-align: center;
     font-size: 3vh;
     width: 98.7;
