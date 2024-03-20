@@ -1,10 +1,10 @@
-/* Body */
-body {
-   margin: 0;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
 }
+
 
 /*header*/
 .header {
@@ -160,130 +160,67 @@ body {
        font-size: 12px;
    }
 }
-.aboutbanner{
+.contactbanner{
     text-align: center;
     margin-top: 2rem;
     max-width: 100%;
     margin-bottom: 10px;
 }
 
-.aboutimg{
-   text-align: center;
-   margin-bottom: 15px;
-}
-
-/* Middle Content */
-.team {
-    position: relative;
-    width: 100%;
+/* Contact Elements */
+.container{
+    width: 80%;
+    margin: 0px auto;
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
     justify-content: center;
-    flex-direction: column;
- }
- 
- 
-.heads {
-   font-family: "Oswald", sans-serif;
-   font-optical-sizing: auto;
-   font-style: normal;
-   font-weight: 350;
-   text-align: center;
 }
+.contact.us{
+    margin-top: 70px;
 
-.paragraph {
-   text-align: center;
-   font-family: "Oswald", sans-serif;
-   font-optical-sizing: auto;
-   font-style: normal;
-   font-size: 20px;
-   font-weight: 250;
 }
-
-.team-content {
-    width: 100%;
-    max-width: 1350px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Changed 'auto' to '1fr' */
-    align-items: center;
-    gap: 0.5rem;
+.contact h1{
+    text-transform: uppercase;
+    font-size: 50px;
     text-align: center;
-    margin-bottom: 4rem;
- }
- 
-.team-content img { 
-   width: 100%;
-   height: auto;
-   border-radius: 15px;
-   margin-bottom: 15px;
+    margin-bottom: 40px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+}
+.service{
+    text-align: center;
+    margin: 20px;
+    background-color: #fff;
+    padding: 30px 20px;
+    cursor: pointer;
+    transition: 0.4s ease;
+    padding: 75px;
 }
 
-.center h1 {
-   color: black;
-   font-size: 3rem;
-   text-align: center;
-   font-family: "PT Serif", serif;
-   font-weight: 900;
-   font-style:normal;
-
+.service p{
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
 }
-
-.box {
-   padding: 16px;
-   background: rgb(0, 0, 0);
-   border-radius: 15px;
-   transition: all .38s ease;
+.service:hover{
+    background-color: #f0f0f0;
 }
-
-.box h3 {
-   font-size: 20px;
-   font-weight: 600;
-   color: rgb(255, 255, 255);
-   margin-bottom: 8px;
+.service i{
+    font-size: 54px;
 }
-
-.box h5 {
-   font-size: 15px;
-   font-weight: 600;
-   color: rgb(255, 255, 255);
-   margin-bottom: 15px;
-   letter-spacing: 2px;
+.service h3{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 15px;
 }
-
-.icon i{
-   display: inline-block;
-   color: rgb(255, 255, 255);
-   font-size: 20px;
-   margin: 0 8px;
-   transition: all .38s ease;
+@media screen and (max-width:768px) {
+    .container{
+        flex-direction: column;
+    }  
 }
-
-.icon i:hover {
-   transform: scale(1.2);
-}
-
-@media(max-width: 1240px){
-   .team{
-       width: 100%;
-       height: auto;
-       padding: 90px 2%;  
-   }
-   .center h1 {
-       font-size: 3.2rem;
-   }
-}
-
-
-
-
-
-
 
 footer {
    bottom: 0;
    max-width: 100%;
+   margin-top: 115px;
    background-color: black;
    color: white;
    text-align: center;
