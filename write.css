@@ -308,7 +308,7 @@ body{
    text-align: center;
    margin-top: 0;
 }
-.submitButton input{
+.submitButton button{
    font-family: "Oswald", sans-serif;
    font-optical-sizing: auto;
    font-style: normal;
@@ -328,7 +328,7 @@ body{
    cursor: pointer;
 }
 @media screen and (width < 601px) {
-   .submitButton input{
+   .submitButton button{
       font-size: medium;
       width: 100px;
       height: 35px;
