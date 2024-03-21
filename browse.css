@@ -207,17 +207,81 @@ form button:hover {
     cursor: pointer;
 }
 
-/*notes*/
 
+/*notes*/
 .container {
+    margin: 50px auto;
     display: flex;
-    border: 3px solid black;
-    height: 80vh;
+    flex-wrap: wrap;
     width: auto;
-    margin: 60px;
-    overflow: scroll;
+    justify-content: center;
 }
 
+.notes {
+    margin-bottom: 25px;
+}
+.top-note {
+    display: block;
+    margin-left: 31.3%;
+}
+
+.top-note img{
+    width: 50px;
+    margin-left: 10%;
+}
+.top-note h4 {
+    display: block;
+    margin-bottom: 0.5px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 900;
+    font-size: 1rem;
+}
+
+.notes .note-box{
+    border: 3px solid grey;
+    margin-right:15px;
+    box-shadow: 3px 3px rgb(122, 122, 122);
+    padding: 75px;
+    padding-right: 70px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: rgb(238, 238, 238);
+}
+
+@media screen and (min-width: 768px){
+    .container {
+        margin: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .notes {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .notes img {
+        display: inline-flex;
+        width: 50px;
+    }
+    
+    .notes h4 {
+        display: inline-flex;
+        margin-top: 0;
+    }
+    
+    .notes .note-box{
+        border: 3px solid grey;
+        margin-right: 50px;
+        box-shadow: 3px 3px rgb(122, 122, 122);
+        padding: 75px;
+        padding-right: 70px;
+        width: 200px;
+        border-radius: 10px;
+        background-color: rgb(238, 238, 238);
+    }
+    
+}
  /*footer*/
  footer {
     bottom: 0;
